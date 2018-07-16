@@ -1,2 +1,6 @@
-<% provide(:title, "Contact") %>
-<h1>This is my contact</h1>
+<% provide(:title, t('static_pages.contact')) %>
+<h1><%= t('static_pages.contact') %></h1>
+<p>
+  Contact the Ruby on Rails Tutorial about the sample app at the
+  <a href=<%= t('static_pages.rails_link') %>contact>contact page</a>.
+</p>
