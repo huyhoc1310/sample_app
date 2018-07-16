@@ -25,7 +25,7 @@ gem "jbuilder", "~> 2.5"
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
-
+gem "rails-controller-testing"
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
@@ -34,7 +34,7 @@ gem "jbuilder", "~> 2.5"
 
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", ">= 1.1.0", require: false
-
+gem "bootstrap-sass", "3.3.7"
 group :development, :test do
   gem "byebug", platforms: [:mri, :mingw, :x64_mingw]
   gem "sqlite3", "1.3.13"

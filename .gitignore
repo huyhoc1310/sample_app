@@ -19,7 +19,6 @@
 
 # Ignore uploaded files in development
 /storage/*
-
 /node_modules
 /yarn-error.log
 
@@ -28,3 +27,6 @@
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
+
+\.idea/
+.idea/
