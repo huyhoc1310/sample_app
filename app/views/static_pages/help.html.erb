@@ -1,9 +1,9 @@
-<% provide(:title, t('static_pages.help'))%>
-<h1><%= t('static_pages.help') %>></h1>
+<% provide :title, t(".help") %>
+<h1><%= t ".help" %></h1>
 <p>
-  Get help on the Ruby on Rails Tutorial at the
-  <a href=<%= t('static_pages.rails_link') %>help>Rails Tutorial help section</a>.
-  To get help on this sample app, see the
-  <a href=<%= t('static_pages.rails_link') %>book><em><%= t('static_pages.railstutorial') %></em>
-  book</a>.
+  <%= t ".intro1" %>
+  <%= link_to t ".help_section", "http://railstutorial.org/help" %>
+  <%= t ".intro2"%>
+  <%= link_to t("static_pages.railstutorial"), "http://railstutorial.org/book" %>>
+  <%= t ".intro3" %>.
 </p>

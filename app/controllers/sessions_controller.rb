@@ -3,17 +3,27 @@ class SessionsController < ApplicationController
 
   def create
     user = User.find_by email: params[:session][:email].downcase
-    if user&.authenticate(params[:session][:password])
+    if user&.authenticate params[:session][:password]
       log_in user
+      if params[:session][:remember_me] == Settings.session.remember
+        remember user
+      else
+        forget user
+      end
       redirect_to root_url
     else
-      flash.now[:danger] = t("sessions.invalid_login")
-      render :new
+      handle_invalid_login
     end
   end
 
   def destroy
-    log_out
+    log_out if logged_in?
     redirect_to root_url
+  end
+
+  private
+  def handle_invalid_login
+    flash.now[:danger] = t "sessions.invalid_login"
+    render :new
   end
 end

@@ -1,7 +1,7 @@
-<% provide(:title, t('static_pages.about')) %>
+<% provide :title, t(".about") %>
 <h1><%= t("static_pages.app_name") %></h1>
 <p>
-  This is the home page for the
-  <a href=<%= t('static_pages.rails_link') %>><%= t('static_pages.railstutorial') %></a>
-  sample application.
+  <%= t ".intro1" %>
+  <%= link_to t("static_pages.railstutorial"), "http://railstutorial.org/" %>
+  <%= t ".intro2" %>
 </p>
