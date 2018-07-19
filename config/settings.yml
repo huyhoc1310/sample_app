@@ -1,8 +1,4 @@
-model:
-  user:
-    name:
-      max: 140
-    email:
-      max: 140
-    password:
-      min: 6
+user:
+  max_name: 140
+  max_email: 140
+  min_password: 6
