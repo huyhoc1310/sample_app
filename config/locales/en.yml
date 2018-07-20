@@ -7,7 +7,12 @@ en:
     help: "Help"
     about: "About"
     signup: "Sign Up"
+    login: "Login"
+    logout: "Logout"
     contact: "Contact"
+    users: "Users"
+    profile: "Profile"
+    settings: "Settings"
     railstutorial: "Ruby on Rails Tutorial"
     base_title: "Ruby on Rails Tutorial Sample App"
     rails_news: "http://news.railstutorial.org/"
@@ -19,3 +24,5 @@ en:
     user_not_found: "User not found"
   shared:
     form_contains: "The form contains"
+  sessions:
+    invalid_login: "Invalid email/password combination"
