@@ -1,6 +1,6 @@
-<% provide(:title, t('static_pages.contact')) %>
-<h1><%= t('static_pages.contact') %></h1>
+<% provide :title, t(".contact") %>
+<h1><%= t(".contact") %></h1>
 <p>
-  Contact the Ruby on Rails Tutorial about the sample app at the
-  <a href=<%= t('static_pages.rails_link') %>contact>contact page</a>.
+  <%= t ".intro1" %>
+  <%= link_to t ".contact", "http://railstutorial.org/contact" %><%= ".intro2" %>.
 </p>
