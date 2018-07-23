@@ -33,11 +33,27 @@ en:
   users:
     new:
       create: "Create my account"
+      confirm: "Confirm Password"
+    index:
+      title: "All users"
+    profile_update: "Profile updated"
     confirmation: "Confirmation"
     user_not_found: "User not found"
+    plz_login: "Please log in."
+    deleted: "User deleted"
+    edit:
+      title: "Edit user"
+      update_profile: "Update your profile"
+      confirm: "Confirmation"
+      save: "Save changes"
+      change: "change"
+    _users:
+      delete: "delete"
+      confirm: "You sure?"
   shared:
     form_contains: "The form contains"
   sessions:
     invalid_login: "Invalid email/password combination"
     new:
       remember_me: "Remember me on this computer"
+    hi: "Hi"

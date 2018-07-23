@@ -4,3 +4,6 @@ user:
   min_password: 6
 session:
   remember: 1
+paginate:
+  rows_perpage: 50
+avatar_size: 50
