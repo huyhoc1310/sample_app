@@ -56,6 +56,7 @@ en:
     invalid_login: "Invalid email/password combination"
     new:
       remember_me: "Remember me on this computer"
+      forgot: "(forgot password)"
     hi: "Hi"
     message: "Account not activated. Check your email for the activation link."
   user_mailer:
@@ -64,7 +65,28 @@ en:
       welcome: " Welcome to the Sample App! Click on the link below to activate your account:"
       activate: "Activate"
     subject_active: "Account activation"
+    subject_reset: "Password reset"
+    password_reset:
+      title: "Password reset"
+      text1: "To reset your password click the link below:"
+      text2: "This link will expire in two hours."
+      text3: "If you did not request your password to be reset, please ignore this email and
+      your password will stay as it is."
+      reset_password: "Reset password"
   account_activations:
     controller:
       activated: "Account activated!"
       invalid: "Invalid activation link"
+  password_resets:
+    new:
+      title: "Forgot password"
+      submit: "Submit"
+    controller:
+      email_sent: "Email sent with password reset instructions"
+      email_notfound: "Email address not found"
+      reset: "Password has been reset."
+      cant_empty: "can't be empty"
+      expired: "Password reset has expired."
+    edit:
+      update: "Update password"
+      title: "Reset password"

@@ -7,3 +7,4 @@ session:
 paginate:
   rows_perpage: 50
 avatar_size: 50
+reset_password_timeout: 2
