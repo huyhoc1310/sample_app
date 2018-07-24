@@ -10,7 +10,8 @@ class SessionsController < ApplicationController
       else
         forget user
       end
-      redirect_to root_url
+      flash[:success] = t "sessions.hi"
+      redirect_back_or user
     else
       handle_invalid_login
     end
@@ -22,6 +23,7 @@ class SessionsController < ApplicationController
   end
 
   private
+
   def handle_invalid_login
     flash.now[:danger] = t "sessions.invalid_login"
     render :new
