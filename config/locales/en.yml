@@ -1,7 +1,6 @@
 en:
   static_pages:
     app_name: "Sample App"
-
     signup_now: "Sign up now"
     home:
       home: "Home"
@@ -50,6 +49,7 @@ en:
     _users:
       delete: "delete"
       confirm: "You sure?"
+    check_mail: "Please check your email to activate your account."
   shared:
     form_contains: "The form contains"
   sessions:
@@ -57,3 +57,14 @@ en:
     new:
       remember_me: "Remember me on this computer"
     hi: "Hi"
+    message: "Account not activated. Check your email for the activation link."
+  user_mailer:
+    account_activation:
+      hi: "Hi"
+      welcome: " Welcome to the Sample App! Click on the link below to activate your account:"
+      activate: "Activate"
+    subject_active: "Account activation"
+  account_activations:
+    controller:
+      activated: "Account activated!"
+      invalid: "Invalid activation link"
