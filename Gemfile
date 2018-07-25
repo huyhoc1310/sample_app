@@ -6,6 +6,7 @@ gem "bcrypt", "~> 3.1.12"
 gem "bootsnap", ">= 1.1.0", require: false
 gem "bootstrap-kaminari-views"
 gem "bootstrap-sass", "~> 3.3.7"
+gem "carrierwave"
 gem "coffee-rails", "~> 4.2"
 gem "config"
 gem "ffaker"
@@ -13,6 +14,7 @@ gem "figaro"
 gem "jbuilder", "~> 2.5"
 gem "jquery-rails"
 gem "kaminari"
+gem "mini_magick"
 gem "puma", "~> 3.11"
 gem "rails", "~> 5.2.0"
 gem "rails-controller-testing"
@@ -40,6 +42,7 @@ group :test do
 end
 
 group :production do
+  gem "fog", "1.42"
   gem "pg", "0.20.0"
   gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 end

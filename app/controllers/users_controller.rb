@@ -5,7 +5,8 @@ class UsersController < ApplicationController
   before_action :admin_user, only: :destroy
 
   def index
-    @users = User.all.page(params[:page]).per Settings.paginate.rows_perpage
+    @users = User.load_user.page(params[:page]).per Settings.rows
+    @microposts = @user.microposts.page(params[:page]).per Settings.rows
   end
 
   def show; end
@@ -61,12 +62,5 @@ class UsersController < ApplicationController
 
   def admin_user
     redirect_to root_url unless current_user.admin?
-  end
-
-  def logged_in_user
-    return if logged_in?
-    store_location
-    flash[:danger] = t "users.plz_login"
-    redirect_to login_url
   end
 end

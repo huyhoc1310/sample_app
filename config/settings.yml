@@ -4,7 +4,11 @@ user:
   min_password: 6
 session:
   remember: 1
-paginate:
-  rows_perpage: 50
+rows: 50
 avatar_size: 50
 reset_password_timeout: 2
+content_max: 140
+picture_size: 5
+picture_height: 400
+picture_width: 400
+picture_type: "image/jpeg,image/gif,image/png"
