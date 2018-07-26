@@ -9,7 +9,11 @@ class UsersController < ApplicationController
     @microposts = @user.microposts.page(params[:page]).per Settings.rows
   end
 
-  def show; end
+  def show
+    return unless @user
+    @microposts = @user.microposts.order_mp
+                       .page(params[:page]).per Settings.rows
+  end
 
   def new
     @user = User.new
@@ -45,6 +49,18 @@ class UsersController < ApplicationController
     @user.destroy
     flash[:success] = t "users.deleted"
     redirect_to users_url
+  end
+
+  def following
+    @title = t "users.following"
+    @users = @user.following.page(params[:page]).per Settings.rows
+    render "show_follow"
+  end
+
+  def followers
+    @title = t "users.followers"
+    @users = @user.followers.page(params[:page]).per Settings.rows
+    render "show_follow"
   end
 
   private
