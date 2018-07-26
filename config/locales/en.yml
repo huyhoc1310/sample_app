@@ -7,6 +7,7 @@ en:
       text1: "This is the home page for the"
       text2: "sample application."
       welcome: "Welcome to the Sample App"
+      feed: "Micropost Feed"
     about:
       about: "About"
       intro1: "This is the home page for the"
@@ -52,6 +53,12 @@ en:
     check_mail: "Please check your email to activate your account."
   shared:
     form_contains: "The form contains"
+    view_profile: "view my profile"
+    place_holder: "Compose new micropost..."
+    post: "Post"
+    _micropost:
+      max_file_size: "Maximum file size is "
+      choose_smaller: "Please choose a smaller file."
   sessions:
     invalid_login: "Invalid email/password combination"
     new:
@@ -90,3 +97,15 @@ en:
     edit:
       update: "Update password"
       title: "Reset password"
+  microposts:
+    _micropost:
+      posted: "Posted"
+      ago: "ago."
+      delete: "delete"
+      confirm: "You sure?"
+    microposts: "Microposts"
+    controller:
+      created: "Micropost created!"
+      destroy: "Micropost deleted"
+    model:
+      less_than: "should be less than"
