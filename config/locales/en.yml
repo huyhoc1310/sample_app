@@ -50,7 +50,16 @@ en:
     _users:
       delete: "delete"
       confirm: "You sure?"
+    follow:
+      follow: "Follow"
+    unfollow:
+      unfollow: "Unfollow"
     check_mail: "Please check your email to activate your account."
+    followers: "Followers"
+    following: "Following"
+    show_follow:
+      view_my_profile: "view my profile"
+      microposts: "Microposts:"
   shared:
     form_contains: "The form contains"
     view_profile: "view my profile"
@@ -59,6 +68,9 @@ en:
     _micropost:
       max_file_size: "Maximum file size is "
       choose_smaller: "Please choose a smaller file."
+    stats:
+      following: "following"
+      followers: "followers"
   sessions:
     invalid_login: "Invalid email/password combination"
     new:

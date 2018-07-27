@@ -6,6 +6,7 @@ session:
   remember: 1
 rows: 50
 avatar_size: 50
+avatar_follow: 30
 reset_password_timeout: 2
 content_max: 140
 picture_size: 5

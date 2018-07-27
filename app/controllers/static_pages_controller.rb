@@ -2,8 +2,8 @@ class StaticPagesController < ApplicationController
   def home
     return unless logged_in?
     @micropost = current_user.microposts.build
-    @feed_items = Micropost.feed(current_user.id)
-        .load_microposts.page(params[:page]).per Settings.rows
+    @feed_items = Micropost.order_mp.feed(current_user.id)
+                           .page(params[:page]).per Settings.rows
   end
 
   def help; end
